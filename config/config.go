@@ -46,6 +46,7 @@ var _ validatable = (*Config)(nil)
 // invalid cases that we currently don't check for but which we may want to add in
 // the future (e.g. disallowing receiving and exporting on the same endpoint).
 func (cfg *Config) Validate() error {
+	fmt.Println("Changes need to contribute to Opensource.... ")
 	// Currently there is no default receiver enabled.
 	// The configuration must specify at least one receiver to be valid.
 	if len(cfg.Receivers) == 0 {

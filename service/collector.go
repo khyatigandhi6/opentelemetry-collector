@@ -155,6 +155,7 @@ func (col *Collector) runAndWaitForShutdownEvent() {
 // setupConfigurationComponents loads the config and starts the components. If all the steps succeeds it
 // sets the col.service with the service currently running.
 func (col *Collector) setupConfigurationComponents(ctx context.Context) error {
+	fmt.Println(":::LM Specific changes::::")
 	cp, err := col.set.ParserProvider.Get(ctx)
 	if err != nil {
 		return fmt.Errorf("cannot load configuration's parser: %w", err)

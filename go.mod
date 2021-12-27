@@ -1,4 +1,4 @@
-module go.opentelemetry.io/collector
+module github.com/khyatigandhi6/opentelemetry-collector
 
 go 1.17
 
